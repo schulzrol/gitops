@@ -71,7 +71,7 @@ spec:
         - name: LOG_LEVEL
           value: DEBUG
         - name: AGENT_CLUSTER_ADDR
-          value: "portainer-agent-headless"
+          value: "localhost"
         - name: KUBERNETES_POD_IP
           valueFrom:
             fieldRef:
