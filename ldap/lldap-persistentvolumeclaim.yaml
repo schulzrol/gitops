@@ -2,9 +2,10 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   labels:
-    io.kompose.service: openldap-claim0
-  name: openldap-claim0
+    app: lldap
+  name: lldap-data
 spec:
+  storageClassName: local-path
   accessModes:
     - ReadWriteOnce
   resources:
