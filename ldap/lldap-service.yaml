@@ -8,11 +8,11 @@ spec:
   selector:
     app: lldap
   ports:
-    - name: http
+    - name: "3890"
       port: 3890
       targetPort: 3890
       nodePort: 30890
-    - name: http
+    - name: "17170"
       port: 17170
       targetPort: 17170
       nodePort: 32170
