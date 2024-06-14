@@ -11,10 +11,10 @@ spec:
     - name: http
       port: 3890
       targetPort: 3890
-      nodePort: 3890
+      nodePort: 33890
     - name: http
       port: 17170
       targetPort: 17170
-      nodePort: 17170
+      nodePort: 37170
 
 
