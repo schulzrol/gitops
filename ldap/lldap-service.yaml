@@ -1,24 +1,18 @@
 apiVersion: v1
 kind: Service
 metadata:
-  annotations:
-    lldap: https://github.com/nitnelave/lldap
-    k8s: https://github.com/Evantage-WS/lldap-kubernetes
-  labels:
-    app: lldap-service
   name: lldap-service
+  namespace: ldap
 spec:
   type: NodePort
   selector:
     app: lldap
   ports:
     - name: http
-      protocol: TCP
       port: 3890
       targetPort: 3890
       nodePort: 3890
     - name: http
-      protocol: TCP
       port: 17170
       targetPort: 17170
       nodePort: 17170
